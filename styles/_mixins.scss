@@ -1,0 +1,17 @@
+@mixin buttons-style {
+	padding: 8px 20px;
+	background-color: var(--black);
+	color: var(--white);
+	border: none;
+	border-radius: var(--radius);
+	font-size: 16px;
+	cursor: pointer;
+	transition: var(--transition);
+	border: 2px solid var(--white);
+
+	&:hover {
+		background-color: var(--white);
+		color: var(--black);
+		border: 2px solid var(--black);
+	}
+}

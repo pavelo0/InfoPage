@@ -1,0 +1,95 @@
+.cat-gallery {
+	padding: 20px;
+
+	&__settings {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		margin-bottom: 32px;
+	}
+
+	&__label {
+		font-size: 18px;
+		font-weight: 700;
+		font-family: sans-serif;
+	}
+	&__input {
+		padding: 8px 16px;
+		border: 2px solid var(--black);
+		border-radius: var(--radius);
+		font-size: 16px;
+		background-color: var(--white);
+		transition: var(--transition);
+
+		&:focus {
+			outline: none;
+			border-color: var(--black);
+		}
+	}
+
+	&__confirm-button {
+		@include buttons-style;
+	}
+
+	&__error-message {
+		color: crimson;
+		font-size: 16px;
+		display: none;
+		font-family: sans-serif;
+	}
+
+	&__list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 24px;
+		border-top: 2px solid var(--black);
+		padding-top: 20px;
+	}
+	&__load-button {
+		display: none;
+		margin: 0 auto;
+		@include buttons-style;
+	}
+
+	&__breed {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		border: 2px solid var(--black);
+		border-radius: var(--radius);
+		padding: 10px;
+		text-align: center;
+		transition: var(--transition);
+		background-color: var(--white);
+
+		&__photo {
+			width: 150px;
+			height: 150px;
+			border-radius: var(--radius);
+			margin: 0 8px;
+		}
+
+		&__title {
+			font-size: 18px;
+			font-family: sans-serif;
+		}
+
+		&__wiki {
+			color: var(--black);
+			text-decoration: underline;
+			font-size: 14px;
+			font-family: sans-serif;
+			transition: var(--transition);
+			text-decoration: none;
+		}
+		&__wiki-btn {
+			@include buttons-style;
+		}
+	}
+}
+.sentinel {
+	height: 1px;
+	width: 100%;
+}

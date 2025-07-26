@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/styles.css" />
+		<title>Explore Cats</title>
+		<script type="module" src="./app.js" defer></script>
+	</head>
+	<body>
+		<header class="page-header">
+			<h1 class="page-header__title">InfoPage | Explore Cats</h1>
+			<h2 class="page-header__author">Pavelo_0</h2>
+		</header>
+
+		<main class="cat-gallery">
+			<section class="cat-gallery__settings">
+				<label for="cat-gallery__quantity-input" class="cat-gallery__label"
+					>Enter a quantity of cats</label
+				>
+				<input
+					type="text"
+					id="quantity-input"
+					name="cat-gallery__quantity"
+					class="cat-gallery__input"
+					placeholder="max: 67"
+				/>
+				<button
+					id="confirm-btn"
+					class="cat-gallery__confirm-button"
+					type="button"
+				>
+					Confirm
+				</button>
+				<h3 id="error-text" class="cat-gallery__error-message">
+					Incorrect Data!
+				</h3>
+			</section>
+
+			<section id="gallery-breeds" class="cat-gallery__list"></section>
+		</main>
+		<div id="sentinel" class="sentinel"></div>
+	</body>
+</html>

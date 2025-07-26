@@ -1,0 +1,288 @@
+body {
+  font-family: var(--font);
+  background-color: var(--white);
+  color: var(--black);
+  padding: 32px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --radius: 16px;
+  --transition: all 0.3s ease;
+  --font: "Segoe UI", "Inter", sans-serif;
+}
+
+.page-header {
+  padding: 5px 0;
+  text-align: center;
+  margin-bottom: 32px;
+  border-bottom: 2px solid black;
+}
+.page-header__title, .page-header__author {
+  padding: 5px 0;
+  font-family: sans-serif;
+}
+.page-header__title {
+  font-size: 32px;
+  font-weight: 700;
+}
+.page-header__author {
+  font-size: 20px;
+  color: var(--black);
+}
+
+.cat-gallery {
+  padding: 20px;
+}
+.cat-gallery__settings {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.cat-gallery__label {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+.cat-gallery__input {
+  padding: 8px 16px;
+  border: 2px solid var(--black);
+  border-radius: var(--radius);
+  font-size: 16px;
+  background-color: var(--white);
+  transition: var(--transition);
+}
+.cat-gallery__input:focus {
+  outline: none;
+  border-color: var(--black);
+}
+.cat-gallery__confirm-button {
+  padding: 8px 20px;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 2px solid var(--white);
+}
+.cat-gallery__confirm-button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+.cat-gallery__error-message {
+  color: crimson;
+  font-size: 16px;
+  display: none;
+  font-family: sans-serif;
+}
+.cat-gallery__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  border-top: 2px solid var(--black);
+  padding-top: 20px;
+}
+.cat-gallery__load-button {
+  display: none;
+  margin: 0 auto;
+  padding: 8px 20px;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 2px solid var(--white);
+}
+.cat-gallery__load-button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+.cat-gallery__breed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid var(--black);
+  border-radius: var(--radius);
+  padding: 10px;
+  text-align: center;
+  transition: var(--transition);
+  background-color: var(--white);
+}
+.cat-gallery__breed__photo {
+  width: 150px;
+  height: 150px;
+  border-radius: var(--radius);
+  margin: 0 8px;
+}
+.cat-gallery__breed__title {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.cat-gallery__breed__wiki {
+  color: var(--black);
+  text-decoration: underline;
+  font-size: 14px;
+  font-family: sans-serif;
+  transition: var(--transition);
+  text-decoration: none;
+}
+.cat-gallery__breed__wiki-btn {
+  padding: 8px 20px;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 2px solid var(--white);
+}
+.cat-gallery__breed__wiki-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid var(--black);
+}
+
+.sentinel {
+  height: 1px;
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */
